@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sentiment Analysis</title>
+  <!-- Link the CSS file -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Sentiment Analysis</h1>
+    <form method="POST" action="/predict">
+      <input type="text" name="review" placeholder="Enter your review here..." required>
+      <button type="submit">Analyze Sentiment</button>
+    </form>
+
+    {% if review %}
+      <!-- Display the review -->
+      <div class="review-result">
+        <h3>Your Review:</h3>
+        <p>{{ review }}</p>
+      </div>
+
+      <!-- Display the sentiment result -->
+      <div class="sentiment-result {{ 'positive' if sentiment == 'Positive' else 'negative' }}">
+        Sentiment: {{ sentiment }}
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* Main container styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #FF6F61, #D32F2F, #1976D2, #8E24AA, #388E3C);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: #fff; /* Text color */
+  }
+  
+  /* Gradient animation */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Styling for the main container */
+  .container {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling */
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Text input styling */
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #FF6F61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #D32F2F;
+  }
+  
+  /* Sentiment Result Styling */
+  .sentiment-result {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .positive {
+    background-color: #388E3C; /* Green */
+    color: #fff;
+  }
+  
+  .negative {
+    background-color: #D32F2F; /* Red */
+    color: #fff;
+  }
+  
