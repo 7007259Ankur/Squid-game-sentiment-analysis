@@ -13,7 +13,7 @@ This is a simple sentiment analysis app built using Flask. It uses a logistic re
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/username/sentiment-analysis-flask.git
+    git clone https://github.com/7007259Ankur/sentiment-analysis-flask.git
     cd sentiment-analysis-flask
     ```
 
